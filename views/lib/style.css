@@ -1,0 +1,60 @@
+:root {
+  --bg: #111418ff;
+  --bg-secondary: #21242899;
+  --bg-card: #313433899;
+  --text: #FFFFFFFF;
+  --text-secondary: #FFFFFF99;
+  --accent: #ff2233ff;
+  --accent-secondary: #ff223399; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: var(--text);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  max-width: 40rem;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+button, input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  transition: 1s;
+}
+input {
+  border: 0.02rem solid var(--text-secondary);
+  background-color: var(--bg-card);
+  color: var(--text);
+}
+button {
+  background-color: var(--accent);
+  color: var(--text);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--accent-secondary);
+}
